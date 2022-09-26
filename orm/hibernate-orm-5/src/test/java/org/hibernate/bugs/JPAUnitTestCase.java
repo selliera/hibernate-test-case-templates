@@ -55,6 +55,7 @@ public class JPAUnitTestCase {
 			dept.addEmployee(emp1);
 			entityManager.merge(dept);
 			entityManager.getTransaction().commit();
+			logger.info("saved {}", dept);
 		}
 		{
 			entityManager.getTransaction().begin();

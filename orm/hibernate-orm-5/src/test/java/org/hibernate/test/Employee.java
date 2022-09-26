@@ -19,7 +19,7 @@ public class Employee {
     private String name;
 
     @Column
-    private Integer rank;
+    private int rank;
 
     @ManyToOne(optional = false, fetch = FetchType.LAZY)
     @JoinColumn(name = "dept_id", nullable = false, insertable = true, updatable = false)
@@ -55,6 +55,11 @@ public class Employee {
 
     public void setEmployeeId(Integer employeeId) {
         this.employeeId = employeeId;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee [employeeId=" + employeeId + ", name=" + name + ", rank=" + rank + "]";
     }
 
 }

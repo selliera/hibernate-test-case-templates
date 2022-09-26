@@ -43,4 +43,9 @@ public class Department {
         this.departmentId = departmentId;
     }
 
+    @Override
+    public String toString() {
+        return "Department [departmentId=" + departmentId + ", employees=" + employees + "]";
+    }
+
 }
