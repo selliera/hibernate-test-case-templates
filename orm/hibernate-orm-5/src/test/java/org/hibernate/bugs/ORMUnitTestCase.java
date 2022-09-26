@@ -135,4 +135,5 @@ public class ORMUnitTestCase extends BaseCoreFunctionalTestCase {
 		int generatedRank = employees.get(0).getRank();
 		assertEquals("Rank must start with 0", 0, generatedRank);
 	}
+
 }
